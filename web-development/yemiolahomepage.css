@@ -1,0 +1,278 @@
+body {
+    background-color: whitesmoke;
+    display: block;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.body-content{
+    display:block;
+    padding-top: 80px;
+    margin-top: 50px;
+}
+.header {
+    display: flex;
+    background: white;
+    /* transition: all 0.5s; */
+    z-index: 100;
+    padding: 40px 40px;
+    align-items: center !important;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0%;
+    justify-content:space-between;
+    height: 150px;
+}
+.page-logo {
+    display: block;
+    background: white;
+    /* margin-left: 80px; */
+    /* justify-content: left; */
+    /* position: absolute; */
+}
+
+/* Style the top navigation bar */
+.header_navbar {
+    overflow: hidden;
+    /* background-color: white; */
+    /* display: flex; */
+    /* position: absolute; */
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* right: 60%; */
+    /* margin-inline-start: 400px; */
+    /* margin-left: 300px; */
+    /* margin-right: 300px; */
+    /* tab-size: 8px; */
+    /* line-height: 24px; */
+    /* justify-content: center; */
+    /* margin-top: 80px; */
+    /* display: block; */
+    /* box-sizing: border-box; */
+    font-size: 18px;
+    /* height: 80px; */
+    letter-spacing: normal;
+    text-rendering: auto;
+    unicode-bidi: isolate;
+    padding: 40px 40px; 
+    /* gap: 15px; */
+    /* justify-content: space-between; */
+}
+/* Style the navigation bar links */
+.navbar_ul {
+    display: flex;
+    gap: 15px;
+    /* padding: 0 20px; */
+    /* color: black; */
+    /* text-align: center; */
+    /* padding: 18px 18px; */
+    /* text-decoration: none; */
+    /* transform: scale(1.3); */
+    /* transition: 3s; */
+    list-style: none;
+    text-align: center;
+}
+.header_a {
+    display: inline-block;
+    text-decoration: none;
+    /* line-height: 24px; */
+    /* background-color: transparent; */
+    color: rgb(0, 0, 0);
+    padding-inline: 1.5rem;
+    padding-block: 0.8rem;
+    /* transition: 0.3s; */
+}
+.header_a::after {
+    display: block;
+    text-decoration: none;
+    line-height: 24px;
+    /* background-color: transparent; */
+    /* color: goldenrod; */
+    /* padding-inline: 1.5rem; */
+    /* padding-block: 0.8rem; */
+    width: 0;
+    transition: width 0.3s;
+    height: 3px;
+    content: "";
+    margin: auto;
+    background-color: goldenrod;
+    bottom: 18px;
+    left: 20px;
+    /* right: calc(100% - 20px); */
+}
+/* Change color on hover */
+.header_a:hover::after {
+    width: 100%;
+    /* color: black; */
+    /* height: 2px; */
+    /* transition: width 0.3s; */
+    /* border-bottom: 3px solid goldenrod; */
+}
+/* .header_a:active { */
+    /* background-color: #ddd; */
+    /* color: black; */
+    /* border-bottom: 4px solid goldenrod; */
+/* } */
+.buttons {
+    gap: 15px;
+    display: flex;
+    /* position: absolute; */
+    align-items: center;
+    /* top: 40%;
+    right: 5%; */
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.button1{
+    background-color: #f44336;
+    color: white;
+    padding: 10px 26px; 
+    text-align: center; 
+    text-decoration: none; 
+    border-radius: 0px 15px;
+    transition: 0.3s;
+    border: 5px
+}
+.button1:hover {
+    background-color: red;
+    transform: scale(1.1)
+}
+.button2 {
+    background-color: none; 
+    color: #f44336; 
+    padding: 10px 26px;
+    text-align: center;
+    text-decoration: none; 
+    border-radius: 0px 15px;
+    border: 2.5px solid #f44336;
+    transition: 0.3s;
+}
+.button2:hover{
+    background-color: red;
+    color: #ddd;
+    transform: scale(1.1)
+}
+.slideshow {
+    margin-top: 130px;
+    background-size: cover;
+    background-repeat: repeat;
+    height: 600px;
+    background-position: center;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    width: auto;
+    animation: slideshow 20s ease-in-out infinite;
+}
+@keyframes slideshow {
+    0% { background-image: url("images/PHOTO-2024-08-13-09-54-01.jpg") }
+    25% { background-image: url("images/IMG_5130.JPG"); }
+    50% { background-image: url("images/IMG_5090.JPG"); }
+    75% { background-image: url("images/IMG_5121.JPG"); }
+    100% { background-image: url("images/IMG_4994.jpg"); }
+}
+.firstHeader {
+    /* vertical-align: middle; */
+    text-align: center;
+}
+.content {
+    display: grid;
+    margin: 10%;
+    gap: 30px;
+    /* padding: 40px 40px 40px 40px; */
+    /* margin-left: 150px; */
+    /* margin-right: 150px; */
+    font-family: HelveticaNeue-Light, Arial, san-serif;
+}
+.MissionStatement {
+    display: flex;
+    padding: 5%;
+    /* justify-content: center; */
+    /* gap: 15px; */
+    color:goldenrod;
+    background-color:white;
+    /* padding-left: 100px; */
+    /* margin-bottom: 50px; */
+    /* margin-top: 10px; */
+    transition: 0.3s;
+    height: 300px;
+    align-content: center;
+    /* position: relative; */
+    border-radius: 10px;
+    gap: 30px;
+} 
+/* .MissionStatement h3 {
+    border: 1.5px solid red;
+    padding: 10px;
+    width: fit-content;
+} */
+.MissionStatement:hover {
+    box-shadow: 5px 5px 30px black;
+    transform: scale(1.02);
+   
+}
+#borehole {
+    width: 250px;
+    height: 280px;
+    /* right: 5%; */
+    /* position: absolute; */
+    /* bottom: 35px; */
+    /* right: 20px; */
+    border-radius: 10px;
+    /* margin-left: 150px; */
+}  
+#borehole1 {
+    width: 250px;
+    height: 280px;
+    /* right: 5%; */
+    /* position: absolute; */
+    /* bottom: 35px; */
+    /* right: 20px; */
+    border-radius: 10px;
+    /* margin-left: 150px; */
+}  
+.overview {
+    display: flex;
+    color:goldenrod;
+    background-color:white;
+    padding: 5%;
+    /* margin-bottom: 50px; */
+    /* margin-top: 10px; */
+    transition: 0.3s;
+    height: 300px;
+    align-content: center;
+    /* position: relative; */
+    border-radius: 10px;
+    gap: 20px;
+}
+.overview:hover {
+    box-shadow: 5px 5px 30px black;
+    transform: scale(1.02);
+   
+}
+.footer {
+    text-align: center;
+    border: none;
+    color: #ddd;
+    background-color: #333;
+    /* width: auto; */
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    /* float: bottom; */
+    /* padding-bottom: 2.5rem; */
+    margin-top: auto;
+    margin-bottom: 0%;
+}
