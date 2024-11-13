@@ -184,7 +184,7 @@ body {
     text-align: center;
 }
 .content {
-    display: flex;
+    display: grid;
     margin: 10%;
     gap: 30px;
     /* padding: 40px 40px 40px 40px; */
